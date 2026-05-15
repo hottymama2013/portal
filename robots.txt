@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portal.resemble.ai/sitemap.xml
