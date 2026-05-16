@@ -19,4 +19,22 @@
       <image:title>Crypto casino payment confirmation</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://portal.resemble.ai/about.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://portal.resemble.ai/contact.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://portal.resemble.ai/privacy-policy.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
