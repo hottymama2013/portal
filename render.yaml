@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: crypto-casino-portal
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    routes:
+      # Canonicalize the landing page URL (strip /index.html, force trailing slash)
+      - type: redirect
+        source: /best-crypto-casino/index.html
+        destination: /best-crypto-casino/
+      - type: redirect
+        source: /best-crypto-casino
+        destination: /best-crypto-casino/
+
+      # Strip .html from static pages (301 to clean URL)
+      - type: redirect
+        source: /about.html
+        destination: /about
+      - type: redirect
+        source: /contact.html
+        destination: /contact
+      - type: redirect
+        source: /privacy-policy.html
+        destination: /privacy-policy
+
+      # Serve the underlying .html files from extensionless URLs
+      - type: rewrite
+        source: /about
+        destination: /about.html
+      - type: rewrite
+        source: /contact
+        destination: /contact.html
+      - type: rewrite
+        source: /privacy-policy
+        destination: /privacy-policy.html
